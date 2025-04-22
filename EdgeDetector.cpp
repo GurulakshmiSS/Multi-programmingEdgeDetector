@@ -3,8 +3,10 @@
 
 using namespace cv;
 int main(){
-    printf("hello world");
-    Mat image = imread("input/cat.jpeg", IMREAD_COLOR);
+    Mat image = imread("input/cat.jpeg", IMREAD_GRAYSCALE);
+
+    imwrite("output/cat_Edge.jpg", image);
+
     return 0;
 }
 
